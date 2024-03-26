@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Zenith</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-bg-color: #f4f4f4;
+            --header-bg-color: #0062E6;
+            --header-bg-color-secondary: #33AEFF;
+            --text-color: #333;
+            --footer-bg-color: #333;
+            --footer-text-color: #fff;
+            --card-bg-color: #fff;
+            --card-shadow-color: rgba(0,0,0,0.2);
+            --accent-color: #007bff;
+        }
+        body { 
+            margin: 0; 
+            font-family: 'Roboto', sans-serif; 
+            color: var(--text-color); 
+            background-color: var(--main-bg-color); 
+        }
+        header, footer { 
+            text-align: center; 
+            padding: 20px 0; 
+        }
+        header { 
+            background: linear-gradient(to right, var(--header-bg-color), var(--header-bg-color-secondary)); 
+            color: var(--footer-text-color); 
+        }
+        footer { 
+            background-color: var(--footer-bg-color); 
+            color: var(--footer-text-color); 
+            margin-top: 40px;
+        }
+        header h1, footer .social-links a { 
+            margin: 0 0 10px; 
+        }
+        p, footer .social-links a { 
+            font-size: 1rem; 
+            margin-bottom: 20px; 
+        }
+        section#team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Centering the 'Our Team' heading */
+        section#team h2 {
+            text-align: center; /* Ensures the heading is centered */
+            margin-bottom: 30px; /* Provides spacing below the heading */
+        }
+        .team-member { 
+            background-color: var(--card-bg-color); 
+            box-shadow: 0 5px 15px var(--card-shadow-color); 
+            border-radius: 10px; 
+            padding: 60px 20px 20px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .team-member img {
+            width: 130px; 
+            height: 130px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 5px solid var(--card-bg-color); 
+            box-shadow: 0 2px 4px var(--card-shadow-color);
+            margin-top: -65px;
+        }
+        h3 { 
+            font-size: 1.4rem; 
+            color: var(--accent-color); 
+            margin: 0;
+        }
+        .social-links a { 
+            color: var(--footer-text-color); 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-size: 1.2rem; 
+        }
+        .social-links a:hover { 
+            color: #4d4d4d; 
+        }
+        @media (max-width: 768px) {
+            .team-member { 
+                margin: 0 20px; 
+                max-width: calc(100% - 40px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Nine Fold Force</h1>
+        <p>Face the Future.</p>
+    </header>
+    <section id="team">
+        <div class="team-member">
+            <img src="images/AmalaMarySaji.jpg" alt="AmalaMarySaji">
+            <h3>Amala Mary Saji (C)</h3>
+            <p>Role: Captain</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/AlwinLaboo.jpg" alt="AlwinLaboo">
+            <h3>Alwin Laboo (VC)</h3>
+            <p>Role: Vice Captain</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/Devajith.jpg" alt="Devajith">
+            <h3>Devajith Sivadas</h3>
+            <p>Role: Team-member</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/AthulyaSuresh.jpg" alt="AthulyaSuresh">
+            <h3>AthulyaSuresh</h3>
+            <p>Role: Team-member</p>
+        </div>
+        
+        <div class="team-member">
+            <img src="images/minna.jpg" alt="minna">
+            <h3>Minna</h3>
+            <p>Role: Team-member</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/nivil.jpg" alt="nivil">
+            <h3>Nivil</h3>
+            <p>Role: Team-member</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/RobinShibu.jpg" alt="RobinShibu">
+            <h3>Robin Shibu</h3>
+            <p>Role: Team-member</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/AnandS.jpg" alt="AnandS">
+            <h3>Anand S</h3>
+            <p>Role: Team-member</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/Albibinu.jpg" alt="Albibinu">
+            <h3>Albi binu</h3>
+            <p>Role: Team-member</p>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="your_whatsapp_link">WhatsApp</a>
+            <a href="your_facebook_link">Facebook</a>
+            <a href="your_instagram_link">Instagram</a>
+            <a href="your_telegram_link">Telegram</a>
+        </div>
+    </footer>
+</body>
+</html>
